@@ -1,0 +1,82 @@
+/* CSS Styling for Background Color Transition */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: changeBackgroundColor 10s infinite alternate;
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #2980b9; /* Initial color */
+    }
+    50% {
+        background-color: #6dd5fa; /* Intermediate color */
+    }
+    100% {
+        background-color: #ffffff; /* Final color */
+    }
+}
+
+/* Other Styles */
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #6dd5fa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#weatherIcon {
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#humidity,
+#windSpeed {
+    margin-top: 10px;
+}
